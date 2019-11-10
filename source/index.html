@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="30" height="30" alt="Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="promo">
+      <h1 class="promo__title">Функциональное питание для котов</h1>
+      <p class="promo__intro">Занялся собой? Займись котом!</p>
+      <img src="https://via.placeholder.com/150x150" width="130" height="80" alt="Cat Energy chicken">
+      <a class="button" href="form.html">Подобрать программу</button>
+    </div>
+    <section class="programs">
+      <h2 class="visually-hidden">Выберите программу</h2>
+      <ul class="programs__list">
+        <li class="programs_items programs_items--cat">
+          <h3 class="programs__title">Похудение</h3>
+          <p class="programs_discription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a href="#" class="programs__link">Каталог SLIM</a>
+        </li>
+        <li class="programs_items programs_items--tiger">
+          <h3 class="programs__title">Набор массы</h3>
+          <p class="programs_discription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a href="#" class="programs__link">Каталог PRO</a>
+        </li>
+      </ul>
+    </section>
+    <section class="plan">
+      <h2 class="plan__title">Как это работает</h2>
+      <ul class="plan__list">
+        <li class="plan_item plan_item--leaf">
+          <p class="plan__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="plan_item plan_item--powder">
+          <p class="plan__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="plan_item plan_item--dining">
+          <p class="plan__text">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+        </li>
+        <li class="plan_item plan_item--clock">
+          <p class="plan__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="40" height="40" alt="Cat Energy">
+    <div class="page-footer_social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright">
+      <p class="page-footer__text">HTML Academy</p>
+      <img class="page-footer__copyright-image" src="https://via.placeholder.com/150x150" width="40" height="40" alt="HTML Academy">
+    </div>
+  </footer>
+</body>
 </html>
