@@ -1,3 +1,9 @@
-body {
-  background: white;
-}
+@import "blocks/global.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+@import "blocks/plan.scss";
+@import "blocks/example.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
