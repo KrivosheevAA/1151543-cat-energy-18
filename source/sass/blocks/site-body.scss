@@ -4,25 +4,33 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
+
 body {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
