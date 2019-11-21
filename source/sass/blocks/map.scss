@@ -1,3 +1,14 @@
 .map__invite {
   display: flex;
 }
+
+.map__title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.map__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 20px;
+}
