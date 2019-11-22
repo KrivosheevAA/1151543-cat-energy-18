@@ -16,22 +16,32 @@
 
 .plan__item {
   margin-bottom: 20px;
+
+  &::before {
+    content: " ";
+    display: block;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: $color-green;
+    background-size: 50px;
+  }
 }
 
 .plan__item--leaf {
-  background: url("../img/advantage-leaf@1x.png");
+  background-image: url("../img/advantage-leaf@1x.png") no-repeat;
 }
 
 .plan__item--powder {
-  background: url("../img/advantage-powder@1x.png");
+  background: url("../img/advantage-powder@1x.png") no-repeat;
 }
 
 .plan__item--dining {
-  background: url("../img/advantage-dining@1x.png");
+  background: url("../img/advantage-dining@1x.png") no-repeat;
 }
 
 .plan__item--clock {
-  background: url("../img/advantage-clock@1x.png");
+  background: url("../img/advantage-clock@1x.png") no-repeat;
 }
 
 .plan__text {

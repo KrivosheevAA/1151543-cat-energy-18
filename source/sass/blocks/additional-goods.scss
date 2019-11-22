@@ -13,6 +13,7 @@
 .item__title {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
 }
 
 .item__discription {
@@ -22,11 +23,12 @@
 }
 
 .additional-goods__image {
-  background: url("../img/gift-photo-mobile@1x.jpg");
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
 }
 
 .additional-goods__text {
   font-family: $font;
   font-size: 16px;
   line-height: 20px;
+  color: #ffffff;
 }

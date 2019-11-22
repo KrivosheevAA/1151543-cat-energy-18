@@ -1,5 +1,5 @@
-@import "blocks/variables.scss";
 @import "blocks/site-body.scss";
+@import "variables.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -12,7 +12,8 @@
 @import "blocks/example.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/main-title.scss";
+@import "blocks/main.scss";
 @import "blocks/goods.scss";
 @import "blocks/goods-more.scss";
 @import "blocks/additional-goods.scss";
+@import "blocks/main-form.scss";
