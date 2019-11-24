@@ -1,0 +1,19 @@
+.main-form__label,
+.main-form__custom-radio,
+.main-form__textarea,
+.main-form__label-checkbox {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.legend__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.main-form__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 16px;
+}

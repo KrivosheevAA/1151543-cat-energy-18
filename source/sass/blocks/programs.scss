@@ -10,7 +10,7 @@
 }
 
 .programs__items {
-  background: #f2f2f2;
+  background: $color-grey;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -26,7 +26,7 @@
 }
 
 .programs__discription {
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $font;
   font-size: 14px;
   line-height: 18px;
 }

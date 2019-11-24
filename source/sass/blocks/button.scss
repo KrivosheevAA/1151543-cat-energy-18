@@ -2,7 +2,7 @@
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
-  background: #68b738;
+  background: $color-green;
   width: 100%;
   padding: 10px 15px;
   text-transform: uppercase;
@@ -13,6 +13,12 @@
 
 .button--light {
   color: #444444;
-  background: #f2f2f2;
+  background: $color-grey;
   text-transform: uppercase;
+}
+
+.button--slider {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
 }
