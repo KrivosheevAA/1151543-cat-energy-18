@@ -18,3 +18,22 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__container {
+    padding-left: 100px;
+    padding-top: 55px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__container {
+
+  }
+}
+
+
+promo__title
+promo__intro
