@@ -1,5 +1,5 @@
 .button {
-  color: #ffffff;
+  color: $color-white;
   font-size: 14px;
   line-height: 18px;
   background: $color-green;
@@ -12,7 +12,7 @@
 }
 
 .button--light {
-  color: #444444;
+  color: $color-darkgray;
   background: $color-grey;
   text-transform: uppercase;
 }
@@ -20,5 +20,5 @@
 .button--slider {
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $color-black;
 }
