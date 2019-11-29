@@ -51,5 +51,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .promo {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: right top;
+    margin-bottom: 80px;
+  }
+  .container {
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-
+}

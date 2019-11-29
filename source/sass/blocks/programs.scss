@@ -96,3 +96,50 @@
     height: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .programs__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .programs__list {
+    display: flex;
+  }
+  .programs__items {
+    max-width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .programs__title {
+    margin-bottom: 80px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .programs__discription {
+    padding-bottom: 27px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .programs__img {
+    top: 45px;
+    left: 45px;
+    width: 100px;
+    height: 100px;
+  }
+  .programs__icon {
+    top: 42%;
+    width: 69%;
+    height: 100%;
+  }
+
+
+
+
+
+
+}
