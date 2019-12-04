@@ -1,13 +1,23 @@
+.example {
+  background: $color-grey;
+}
 .example__title {
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+  padding-top: 28px;
 }
 
 .example__text {
   font-family: $font;
   font-size: 14px;
   line-height: 18px;
+}
+
+.example__result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .example__text--small {
@@ -24,4 +34,35 @@
 .example__cost {
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__text--small {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__text--big {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

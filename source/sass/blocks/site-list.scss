@@ -8,3 +8,44 @@
     font-size: 20px;
   }
 }
+
+.site-list__item {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+ .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  .site-list__item {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin: 0 auto;
+  }
+    .site-list__item {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .site-list {
+
+      a {
+      color: $color-black;
+      }
+  }
+}

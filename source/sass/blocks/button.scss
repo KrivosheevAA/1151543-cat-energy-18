@@ -22,3 +22,9 @@
   line-height: 20px;
   color: $color-black;
 }
+
+@media (min-width: $tablet-width) {
+  .button--slider {
+    font-size: 20px;
+  }
+}
