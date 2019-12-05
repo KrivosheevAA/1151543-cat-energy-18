@@ -1,3 +1,18 @@
+.information,
+.program,
+.contacts,
+.comment,
+.additional {
+  border: none;
+}
+
+.main-form__group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .main-form__label,
 .main-form__custom-radio,
 .main-form__textarea,
@@ -16,4 +31,23 @@
   font-family: $font;
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__label,
+  .main-form__custom-radio,
+  .main-form__textarea,
+  .main-form__custom-checkbox {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .legend__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .main-form__text {
+    font-size: 16px;
+  }
 }
