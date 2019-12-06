@@ -17,7 +17,7 @@
 }
 
 @media (min-width: $tablet-width) {
- .site-list {
+  .site-list {
     display: flex;
     justify-content: space-between;
     width: 440px;
@@ -37,15 +37,14 @@
     justify-content: space-between;
     width: 480px;
     margin: 0 auto;
+
+    a {
+      color: $color-black;
+    }
   }
-    .site-list__item {
+
+  .site-list__item {
     font-size: 20px;
     line-height: 25px;
-  }
-  .site-list {
-
-      a {
-      color: $color-black;
-      }
   }
 }
