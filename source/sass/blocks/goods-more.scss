@@ -17,3 +17,13 @@
   line-height: 16px;
   font-family: $font;
 }
+
+@media (min-width: $tablet-width) {
+  .goods-more__text--big {
+    font-size: 20px;
+  }
+
+  .goods-more__text {
+    font-size: 16px;
+  }
+}

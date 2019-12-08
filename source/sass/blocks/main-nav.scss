@@ -13,20 +13,4 @@
     width: auto;
     margin: 0;
   }
-
-  .site-list {
-    display: flex;
-    justify-content: space-between;
-    width: 440px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list {
-    display: flex;
-    justify-content: space-between;
-    width: 480px;
-    margin: 0 auto;
-  }
 }

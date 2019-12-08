@@ -14,11 +14,24 @@
 .button--light {
   color: $color-darkgray;
   background: $color-grey;
-  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-main;
 }
 
 .button--slider {
   font-size: 16px;
   line-height: 20px;
   color: $color-black;
+}
+
+.button--catalog {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--slider {
+    font-size: 20px;
+  }
 }
