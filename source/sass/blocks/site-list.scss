@@ -4,8 +4,16 @@
   padding: 0;
 
   a {
-    color: black;
+    display: block;
+    padding: 25px 0;
     font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid $color-lightgray;
+    color: black;
+    text-align: center;
   }
 }
 
@@ -21,7 +29,11 @@
     display: flex;
     justify-content: space-between;
     width: 440px;
-    margin: 0 auto;
+
+    a {
+      margin: 0 auto;
+      border-top: none;
+    }
   }
 
   .site-list__item {
