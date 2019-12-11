@@ -28,18 +28,21 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    width: 440px;
+    margin-right: -20px;
 
     a {
       margin: 0 auto;
       border-top: none;
+      font-weight: 400;
+      padding: 10px 19px;
+
     }
   }
 
   .site-list__item {
     font-size: 18px;
     line-height: 25px;
-    font-weight: 400;
+
   }
 }
 

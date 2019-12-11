@@ -1,8 +1,12 @@
 .promo {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  margin-top: 18px;
+  margin-top: 0;
   margin-bottom: 22px;
   display: flex;
+}
+
+.promo__container {
+  padding-top: 5px;
 }
 
 .promo__title {

@@ -11,6 +11,12 @@
   cursor: pointer;
 }
 
+.button--promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .button--light {
   color: $color-darkgray;
   background: $color-grey;
