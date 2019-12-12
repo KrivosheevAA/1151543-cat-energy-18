@@ -2,11 +2,6 @@
   background: $color-grey;
 }
 
-.footer__container {
-  margin-left: -20px;
-  margin-right: -20px;
-}
-
 .page-footer__logo {
   max-width: 135px;
   margin: 0 auto;
@@ -20,6 +15,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid $color-grey-hr;
+  border-bottom: 1px solid $color-grey-hr;
 }
 
 .social__item {

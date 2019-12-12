@@ -35,7 +35,8 @@
       border-top: none;
       font-weight: 400;
       padding: 10px 19px;
-
+      font-size: 18px;
+      line-height: 25px;
     }
   }
 
@@ -43,6 +44,23 @@
     font-size: 18px;
     line-height: 25px;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__item--active::after {
+    content: " ";
+    position: absolute;
+    left: 20px;
+    right: 0;
+    height: 2px;
+    background: $color-green;
+    width: 63px;
   }
 }
 
