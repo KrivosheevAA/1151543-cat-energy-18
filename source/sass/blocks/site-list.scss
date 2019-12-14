@@ -51,16 +51,20 @@
     &:active {
       opacity: 0.3;
     }
-  }
 
-  .site-list__item--active::after {
-    content: " ";
-    position: absolute;
-    left: 20px;
-    right: 0;
-    height: 2px;
-    background: $color-green;
-    width: 63px;
+    &--active {
+      position: relative;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        left: 19px;
+        right: 19px;
+        height: 2px;
+        background: $color-green;
+      }
+    }
   }
 }
 

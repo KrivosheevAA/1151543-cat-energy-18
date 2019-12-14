@@ -58,7 +58,12 @@
   color: $color-darkgray;
   font-size: 14px;
   line-height: 18px;
+
+    br {
+      display: none;
+    }
 }
+
 
 @media (min-width: $tablet-width) {
   .plan__title {
@@ -106,6 +111,10 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 250px;
+
+     br {
+      display: block;
+    }
   }
 }
 
