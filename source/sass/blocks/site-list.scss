@@ -70,18 +70,18 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    display: flex;
-    justify-content: space-between;
-    width: 480px;
-    margin: 0 auto;
 
     a {
-      color: $color-black;
+      color: $color-white;
     }
   }
 
   .site-list__item {
     font-size: 20px;
     line-height: 25px;
+
+    &::after {
+      background: $color-white;
+    }
   }
 }

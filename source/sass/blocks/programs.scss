@@ -37,6 +37,10 @@
   border-bottom: 1px solid $color-grey-hr;
   padding-bottom: 20px;
   margin-bottom: 19px;
+
+  br {
+    display: none;
+  }
 }
 
 .programs__img {
@@ -109,6 +113,11 @@
     font-size: 16px;
     line-height: 24px;
     border: none;
+    width: 375px;
+
+    br {
+      display: block;
+    }
   }
 
   .programs__img {
@@ -142,24 +151,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .programs {
-    margin-left: -40px;
-    margin-right: -40px;
-  }
-
-  .programs__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   .programs__list {
     display: flex;
   }
 
   .programs__items {
     max-width: 50%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 80px 55px 58px;
+    margin-right: 40px;
   }
 
   .programs__title {
@@ -167,21 +166,17 @@
     text-align: center;
   }
 
+  .programs__discription {
+    width: 470px;
+
+    br {
+      display: none;
+    }
+  }
+
   .programs__img {
-    top: 45px;
     left: 45px;
     width: 100px;
     height: 100px;
-  }
-
-  .programs__icon {
-    top: 42%;
-    width: 69%;
-    height: 100%;
-  }
-
-  .programs__icon--tiger {
-    width: 133%;
-    height: 100%;
   }
 }

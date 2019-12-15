@@ -29,6 +29,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     background: none;
+    min-height: 860px;
   }
 
   .promo__container {
@@ -53,12 +54,23 @@
     line-height: 20px;
     text-align: left;
   }
+
+  .promo__img {
+    position: absolute;
+    top: 340px;
+    margin: 0 auto;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: right top;
     margin-bottom: 80px;
+    min-height: 530px;
   }
+
+   .promo__img {
+    top: -25px;
+    left: 50%;
+   }
 }
