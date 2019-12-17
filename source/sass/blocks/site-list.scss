@@ -12,7 +12,7 @@
     text-transform: uppercase;
     text-decoration: none;
     border-top: 1px solid $color-lightgray;
-    color: black;
+    color: $color-black;
     text-align: center;
   }
 }
@@ -72,7 +72,7 @@
   .site-list {
 
     a {
-      color: $color-white;
+      color: $color-black;
     }
   }
 
