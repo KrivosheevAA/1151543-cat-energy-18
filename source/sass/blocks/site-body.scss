@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
@@ -16,6 +27,7 @@ body {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 img {
@@ -24,14 +36,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }

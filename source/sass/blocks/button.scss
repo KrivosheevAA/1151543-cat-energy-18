@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.button--promo {
+  display: block;
+}
+
 .button--light {
   color: $color-darkgray;
   background: $color-grey;
@@ -28,10 +32,15 @@
 .button--catalog {
   font-size: 16px;
   line-height: 20px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .button--slider {
     font-size: 20px;
+  }
+
+  .button--promo {
+    width: 246px;
   }
 }
