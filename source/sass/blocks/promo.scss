@@ -1,8 +1,4 @@
 .promo {
-  background-color: $color-green;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  margin-top: 0;
-  margin-bottom: 22px;
   display: flex;
 }
 
@@ -69,8 +65,8 @@
     min-height: 530px;
   }
 
-   .promo__img {
+  .promo__img {
     top: -25px;
     left: 50%;
-   }
+  }
 }

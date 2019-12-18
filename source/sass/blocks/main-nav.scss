@@ -3,6 +3,7 @@
   position: relative;
   padding-top: 10px;
 }
+
 .main-nav__toggle {
   position: absolute;
   top: -30px;
@@ -15,15 +16,18 @@
   cursor: pointer;
   border: none;
 }
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: $color-black;
-  box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+    box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {

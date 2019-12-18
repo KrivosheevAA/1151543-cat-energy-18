@@ -39,7 +39,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods-more  {
+  .goods-more {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -50,12 +50,13 @@
 
     &::before,
     &::after {
-    top: 32%;
-    left: 39%;
-    width: 60px;
-    background-color: $color-border-goods-more;
+      top: 32%;
+      left: 39%;
+      width: 60px;
+      background-color: $color-border-goods-more;
+    }
   }
-}
+
   .goods-more__text--big {
     font-size: 20px;
     max-width: 140px;
