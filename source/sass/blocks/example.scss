@@ -36,6 +36,49 @@
   font-size: 14px;
   line-height: 20px;
 }
+.example__image {
+  height: 520px;
+}
+
+.example__slider {
+  height: 517px;
+  position: relative;
+  width: 610px;
+}
+
+.example__element {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.example__element--before {
+  width: 50%;
+
+  img {
+    left: -40px;
+  }
+}
+
+.example__element--after {
+  width: 50%;
+  left: auto;
+  right: 0;
+
+  img {
+    right: -40px;
+  }
+}
+
+.example__element img {
+  position: absolute;
+  max-width: none;
+  top: 0;
+  bottom: 0;
+  height: auto;
+}
 
 @media (min-width: $tablet-width) {
   .example__container {
