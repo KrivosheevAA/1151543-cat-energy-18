@@ -9,7 +9,7 @@
   padding-top: 28px;
 }
 
-.example__text {
+.example__info {
   font-family: $font;
   font-size: 14px;
   line-height: 18px;
@@ -18,30 +18,53 @@
 .example__result {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.example__text--small {
+.example__box {
+  width: 125px;
+  position: relative;
+}
+
+.example__count {
+  font-size: 24px;
+  line-height: 24px;
+  max-width: 124px;
+  padding: 15px 10px 12px;
+  text-align: center;
+  border: 1px solid $color-grey-hr;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.example__text {
   font-family: $font;
   font-size: 12px;
   line-height: 12px;
-}
-
-.example__text--big {
-  font-size: 24px;
-  line-height: 24px;
+  background: $color-grey;
+  width: 80px;
+  position: absolute;
+  top: 52px;
+  left: 32px;
+  display: block;
+  text-align: center;
+  margin: 22px 0px 0px -10px;
 }
 
 .example__cost {
   font-size: 14px;
   line-height: 20px;
-}
-.example__image {
-  height: 520px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
 }
 
 .example__slider {
-  height: 517px;
+  height: 270px;
   position: relative;
   width: 610px;
 }
@@ -55,20 +78,11 @@
 }
 
 .example__element--before {
-  width: 50%;
+  width: 100%;
 
   img {
-    left: -40px;
-  }
-}
-
-.example__element--after {
-  width: 50%;
-  left: auto;
-  right: 0;
-
-  img {
-    right: -40px;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -77,7 +91,37 @@
   max-width: none;
   top: 0;
   bottom: 0;
+  left: -15px;
   height: auto;
+}
+
+.example__range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 35px;
+}
+
+.example__progress {
+    position: relative;
+    width: 100%;
+    height: 14px;
+    border: 1px solid $color-grey-hr;
+    border-radius: 50px;
+    background: $color-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      right: 5px;
+      width: 35px;
+      height: 6px;
+      border-radius: 50px;
+      background: $color-green;
+      transform: translateY(-50%);
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -90,23 +134,129 @@
     font-size: 60px;
   }
 
-  .example__text {
+  .example__result {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .example__info {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .example__text--small {
-    font-size: 14px;
-    line-height: 14px;
+  .example__box {
+    width: 162px;
+    margin-right: 41px;
   }
 
-  .example__text--big {
+  .example__text {
+    font-size: 14px;
+    line-height: 14px;
+    width: 133px;
+    top: 80px;
+    left: 26px;
+  }
+
+  .example__count {
     font-size: 30px;
     line-height: 37px;
+    padding: 23px 10px 20px;
+    max-width: 162px;
   }
 
   .example__cost {
     font-size: 20px;
     line-height: 20px;
+    width: 173px;
+    text-align: right;
+    flex-basis: 42%;
+  }
+
+  .example__image {
+    height: 640px;
+    width: 100%;
+  }
+
+  .example__slider {
+    height: 517px;
+    position: relative;
+    width: 486px;
+  }
+
+  .example__element {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .example__element--before {
+    width: 64%;
+
+    img {
+      left: -40px;
+    }
+  }
+
+  .example__element--after {
+    width: 50%;
+    left: auto;
+    right: 0;
+
+    img {
+      right: -40px;
+    }
+  }
+
+  .example__element img {
+    position: absolute;
+    max-width: none;
+    top: 0;
+    bottom: 0;
+    height: auto;
+  }
+
+  .example__range {
+    width: 100%;
+    padding: 10px 0 70px;
+  }
+
+  .example__progress {
+    max-width: inherit;
+    height: 6px;
+    margin: 0 25px;
+    background: $color-grey-hr;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      margin: auto;
+      border-radius: 50%;
+      background-color: $color-green;
+    }
+  }
+
+  .example__bar {
+    position: absolute;
+    top: 50%;
+    left: 50.5%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    background: #ffffff;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
   }
 }
+
+
+
