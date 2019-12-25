@@ -31,6 +31,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map__invite {
+    padding: 70px 40px 62px 40px;
+  }
+
   .map__title {
     font-size: 20px;
     line-height: 25px;
@@ -38,9 +42,34 @@
 
   .map__text {
     font-size: 16px;
+    text-align: right;
   }
 
   .map__adaptive {
     height: 395px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__invite  {
+    position: absolute;
+    display: block;
+    background-color: $color-white;
+    width: 570px;
+    height: 200px;
+    top: 20%;
+    bottom: 20%;
+  }
+
+  .map__title {
+    width: 50%;
+  }
+
+  .map__text {
+    width: 50%;
   }
 }

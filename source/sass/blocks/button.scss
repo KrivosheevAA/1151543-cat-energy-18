@@ -31,6 +31,10 @@
   cursor: pointer;
   border: none;
   font-family: $font-main;
+
+  span {
+    border-bottom: 1px dashed $color-grey-2;
+  }
 }
 
 .button--catalog {
