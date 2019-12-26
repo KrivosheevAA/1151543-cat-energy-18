@@ -136,12 +136,17 @@
 
   .example__result {
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .example__info {
     font-size: 16px;
     line-height: 24px;
+    max-width: 680px;
+
+    br {
+      display: none;
+    }
   }
 
   .example__box {
@@ -167,9 +172,10 @@
   .example__cost {
     font-size: 20px;
     line-height: 20px;
-    width: 173px;
+    max-width: 170px;
     text-align: right;
     flex-basis: 42%;
+    margin-left: 130px;
   }
 
   .example__image {
@@ -251,12 +257,65 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid #dcdcdc;
-    background: #ffffff;
+    border: 1px solid $color-grey-3;
+    background: $color-white;
     cursor: pointer;
     transform: translate(-50%, -50%);
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example__description {
+    display: flex;
+    flex: 0 0 40%;
+    max-width: 40%;
+    flex-wrap: wrap;
+  }
 
+  .example__title {
+    margin-top: -120px;
+  }
+
+  .example__info {
+    width: 435px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .example__result {
+    justify-content: space-between;
+  }
+
+  .example__box {
+
+    &:nth-of-type(2) {
+      margin-right: 120px;
+    }
+  }
+
+  .example__cost {
+    flex-basis: 100%;
+    justify-content: flex-start;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+
+
+  .example__image {
+    display: flex;
+    flex: 0 0 60%;
+    max-width: 60%;
+    flex-wrap: wrap;
+  }
+
+  .example__progress {
+    &::after {
+      left: 4px;
+    }
+  }
+
+}
 
