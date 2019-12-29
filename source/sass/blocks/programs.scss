@@ -12,9 +12,7 @@
 .programs__items {
   background: $color-grey;
   margin-bottom: 20px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 100%;
+  flex: 0 0 100%;
   position: relative;
   padding: 0 20px 20px;
 }

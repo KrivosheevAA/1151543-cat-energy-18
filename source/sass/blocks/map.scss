@@ -1,3 +1,11 @@
+.map {
+  background-color: $color-grey;
+}
+
+.map--color {
+  background-color: $color-white;
+}
+
 .map__invite {
   display: flex;
   justify-content: space-between;

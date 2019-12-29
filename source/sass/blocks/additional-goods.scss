@@ -7,7 +7,18 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 320px;
+    height: 3px;
+    margin-top: 2px;
+    color: $color-green;
+  }
 }
 
 .additional-goods__list {
@@ -19,20 +30,32 @@
 .additional-goods__item {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
-.item__title {
+.additional-goods__blog {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.additional-goods__table {
+  flex: 0 0 100%;
+  margin-bottom: 15px;
+
+  td:last-child {
+    text-align: right;
+  }
+}
+
+.additional-goods__discription {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 6px;
-  margin-top: 0;
+  margin-top: 30px;
 }
 
-.item__discription {
+.additional-goods__cost {
   font-family: $font;
   font-size: 14px;
   line-height: 14px;
@@ -50,6 +73,7 @@
   justify-content: space-between;
   padding: 50px 10px;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .additional-goods__icon {
@@ -70,17 +94,44 @@
     line-height: 36px;
   }
 
-  .additional-goods__item {
-    display: flex;
-    flex-wrap: wrap;
+  .additional-goods__list {
+    width: 100%;
+
+    li:last-child {
+      border-bottom: 1px solid $color-grey-hr;
+    }
   }
 
-  .item__title {
+  .additional-goods__item {
+    padding: 26px 35px;
+    border: 1px solid $color-grey-hr;
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .additional-goods__blog {
+    width: 100%;
+    align-items: center;
+  }
+
+  .additional-goods__table {
+    flex-basis: 50%;
+    margin-top: 22px;
+
+    td:first-child {
+      text-align: right;
+    }
+  }
+
+  .additional-goods__discription {
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    flex: 0 0 50%;
+    margin-bottom: 25px;
   }
 
-  .item__discription {
+  .additional-goods__cost {
     font-size: 16px;
     line-height: 20px;
   }
@@ -98,22 +149,25 @@
 }
 
 @media (min-width: $desktop-width) {
-  .additional-goods__container {
-    flex-wrap: nowrap;
-  }
-
   .additional-goods__list {
     margin-bottom: 70px;
+    width: 75%;
   }
 
   .additional-goods__item {
-    display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 16px 0;
   }
 
   .additional-goods__image {
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
     min-height: 285px;
+    width: 25%;
+    flex: 0 0 25%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
   }
 
   .additional-goods__text {
