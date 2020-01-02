@@ -1,9 +1,17 @@
+.main-form__column {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 .information,
 .program,
 .contacts,
 .comment,
 .additional {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-form__group {
@@ -12,12 +20,46 @@
 }
 
 .main-form__label,
-.main-form__custom-radio,
 .main-form__textarea,
 .main-form__custom-checkbox {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.main-form__custom-radio {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 10px;
+}
+
+.main-form__radio:checked + .main-form__custom-radio:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 9px;
+    top: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: $color-green;
+    margin-top: 0;
+}
+
+.main-form__radio + .main-form__custom-radio:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-grey-hr;
+    border-radius: 50%;
 }
 
 .main-form__label {
@@ -35,6 +77,7 @@
   font-size: 16px;
   line-height: 18px;
   flex-grow: 1;
+  width: 100%;
 }
 
 .legend__title {

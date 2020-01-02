@@ -40,9 +40,10 @@
     <div class="container">
       <div class="main">
         <h1 class="main-title">Подбор программы</h1>
-        <p class="main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="main__text">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
       </div>
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="main-form__column">
         <fieldset class="information">
           <p class="main-form__group">
             <label class="main-form__label" for="name">Имя:*</label>
@@ -57,6 +58,8 @@
             <input class="main-form__input" type="text" name="age" id="age" placeholder="7">
           </p>
         </fieldset>
+      </div>
+      <div class="main-form__column">
         <fieldset class="program">
           <p class="main-form__group">
             <input class="visually-hidden main-form__radio" type="radio" id="radio-1" name="radio" checked>
@@ -71,8 +74,10 @@
             <label class="main-form__custom-radio" for="radio-3">Не знаю (нужен ваш совет)</label>
           </p>
         </fieldset>
+      </div>
+      <div class="main-form__column">
         <fieldset class="contacts">
-          <legeng class="legend__title">Контактные данные (владельца кота)</legend>
+          <legend class="legend__title">Контактные данные (владельца кота)</legend>
             <p class="main-form__group">
               <label class="main-form__label" for="email">E-mail:*</label>
               <input class="main-form__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
@@ -82,6 +87,7 @@
               <input class="main-form__input" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90">
             </p>
         </fieldset>
+      </div>
         <fieldset class="comment">
           <legeng class="legend__title">Комментарий</legeng>
           <textarea class="main-form__textarea" rows="8" id="for-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -107,8 +113,8 @@
         </fieldset>
         <button class="button">отправить заявку</button>
         <p class="main-form__text">*— Обязательные поля</p>
-      </div>
-    </form>
+      </form>
+    </div>
     <section class="map">
       <div class="container">
         <div class="map__invite">
