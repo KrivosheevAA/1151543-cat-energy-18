@@ -25,7 +25,6 @@
 
 @media (min-width: $desktop-width) {
   .site-body--index .page-header {
-
     &::after {
       content: "";
       position: absolute;
@@ -49,13 +48,12 @@
   }
 
   .site-body--index .site-list__item {
-     &--active {
+    &--active {
       &::after {
-      background: $color-white;
+        background: $color-white;
       }
     }
   }
-
 
   .page-header__container {
     padding-top: 53px;

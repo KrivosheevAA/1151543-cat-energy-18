@@ -48,7 +48,7 @@
   left: 32px;
   display: block;
   text-align: center;
-  margin: 22px 0px 0px -10px;
+  margin: 22px 0 0 -10px;
 }
 
 .example__cost {
@@ -101,25 +101,25 @@
 }
 
 .example__progress {
-    position: relative;
-    width: 100%;
-    height: 14px;
-    border: 1px solid $color-grey-hr;
-    border-radius: 50px;
-    background: $color-white;
+  position: relative;
+  width: 100%;
+  height: 14px;
+  border: 1px solid $color-grey-hr;
+  border-radius: 50px;
+  background: $color-white;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 5px;
-      top: 50%;
-      right: 5px;
-      width: 35px;
-      height: 6px;
-      border-radius: 50px;
-      background: $color-green;
-      transform: translateY(-50%);
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    right: 5px;
+    width: 35px;
+    height: 6px;
+    border-radius: 50px;
+    background: $color-green;
+    transform: translateY(-50%);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -287,7 +287,6 @@
   }
 
   .example__box {
-
     &:nth-of-type(2) {
       margin-right: 120px;
     }
@@ -299,8 +298,6 @@
     margin-left: 0;
     max-width: 100%;
   }
-
-
 
   .example__image {
     display: flex;
@@ -315,4 +312,3 @@
     }
   }
 }
-
