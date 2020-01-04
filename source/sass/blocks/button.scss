@@ -9,6 +9,7 @@
   border: none;
   text-align: center;
   cursor: pointer;
+  font-family: $font-main;
 }
 
 .button--promo {
@@ -27,12 +28,25 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-black;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: $font-main;
+
+  span {
+    border-bottom: 1px dashed $color-grey-2;
+  }
 }
 
 .button--catalog {
   font-size: 16px;
   line-height: 20px;
   display: block;
+}
+
+.button--form {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,5 +56,11 @@
 
   .button--promo {
     width: 246px;
+  }
+
+  .button--form {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 283px;
   }
 }

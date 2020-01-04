@@ -1,13 +1,14 @@
 .main-title {
   font-size: 36px;
   line-height: 60px;
-  color: #111111;
+  color: $color-black;
   font-weight: 400;
 }
 
 .main__text {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,5 +21,12 @@
   .main__text {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__text {
+    margin-left: 0;
   }
 }
