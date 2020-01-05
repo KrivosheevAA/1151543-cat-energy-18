@@ -47,6 +47,14 @@
     }
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .site-body--index .page-header {
+      &::after {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+  }
+
   .site-body--index .site-list__item {
     &--active {
       &::after {

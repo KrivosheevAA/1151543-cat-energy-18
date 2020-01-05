@@ -19,6 +19,15 @@
   }
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .promo {
+    &::after {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+}
+
+
 .promo__container {
   padding-top: 5px;
 }
