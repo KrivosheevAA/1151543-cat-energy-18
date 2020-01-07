@@ -87,6 +87,10 @@
       transform: translate(20px);
     }
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

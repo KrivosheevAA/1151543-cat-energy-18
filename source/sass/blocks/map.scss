@@ -67,17 +67,25 @@
     position: absolute;
     display: block;
     background-color: $color-white;
-    width: 570px;
+    max-width: 570px;
     height: 200px;
     top: 20%;
     bottom: 20%;
+    left: 40px;
+    width: 100%;
+    padding: 32px 35px;
+    display: flex;
+    align-items: center;
   }
 
   .map__title {
-    width: 50%;
+    max-width: 50%;
+    padding: 30px 40px;
   }
 
   .map__text {
-    width: 50%;
+    max-width: 50%;
+    padding: 30px 40px;
+    text-align: left;
   }
 }

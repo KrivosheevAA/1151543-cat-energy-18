@@ -98,12 +98,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 0 35px;
+  max-width: 195px;
+  margin: 0 auto;
 }
 
 .example__progress {
   position: relative;
   width: 100%;
   height: 14px;
+  max-width: 84px;
   border: 1px solid $color-grey-hr;
   border-radius: 50px;
   background: $color-white;
@@ -222,7 +225,7 @@
   }
 
   .example__range {
-    width: 100%;
+    max-width: 575px;
     padding: 10px 0 70px;
   }
 
@@ -239,7 +242,7 @@
       top: 5px;
       bottom: 0;
       right: 0;
-      left: 1px;
+      left: 5px;
       width: 8px;
       height: 8px;
       margin: auto;
@@ -259,6 +262,7 @@
     background: $color-white;
     cursor: pointer;
     transform: translate(-50%, -50%);
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -304,11 +308,17 @@
     flex: 0 0 60%;
     max-width: 60%;
     flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .example__range {
+    width: 100%;
   }
 
   .example__progress {
     &::after {
       left: 4px;
+      top: 7px;
     }
   }
 }
