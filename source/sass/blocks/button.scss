@@ -10,6 +10,14 @@
   text-align: center;
   cursor: pointer;
   font-family: $font-main;
+
+  &:hover {
+    background: $color-green-light;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--promo {
@@ -22,19 +30,37 @@
   font-size: 16px;
   line-height: 20px;
   font-family: $font-main;
+
+  &:hover {
+    background: $color-grey-4;
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
-.button--slider {
+.button__slider {
   font-size: 16px;
   line-height: 20px;
   color: $color-black;
   background: transparent;
+  text-transform: uppercase;
   cursor: pointer;
   border: none;
   font-family: $font-main;
 
   span {
     border-bottom: 1px dashed $color-grey-2;
+
+    &:hover {
+      border-bottom: 1px solid $color-grey-5;
+      background: none;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -50,12 +76,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .button--slider {
+  .button__slider {
     font-size: 20px;
   }
 
   .button--promo {
     width: 246px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .button--form {

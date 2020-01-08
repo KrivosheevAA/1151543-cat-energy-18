@@ -8,7 +8,7 @@
     content: "";
     position: absolute;
     top: -37%;
-    left: 43%;
+    left: 44%;
     width: 30px;
     height: 2px;
     background-color: $color-border-goods-more;
@@ -59,6 +59,7 @@
   .goods-more__text--big {
     font-size: 20px;
     max-width: 140px;
+    margin: 0 auto 10px;
   }
 
   .goods-more__text {

@@ -21,6 +21,14 @@
 .page-footer__logo {
   max-width: 135px;
   padding: 35px 0 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .social__list {
@@ -35,6 +43,18 @@
 .social__item {
   cursor: pointer;
   margin: 0 20px;
+}
+
+.social__icon {
+  fill: $color-blackgray;
+
+  &:hover {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte {
@@ -63,6 +83,10 @@
   color: $color-darkgray;
   font-size: 16px;
   line-height: 16px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__icon {
@@ -70,6 +94,10 @@
   top: 22px;
   right: -6px;
   fill: $color-blackgray;
+
+  &:hover {
+    fill: $color-green;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -27,7 +27,6 @@
   }
 }
 
-
 .promo__container {
   padding-top: 5px;
 }
@@ -52,6 +51,7 @@
   .promo {
     background: none;
     min-height: 860px;
+    margin-bottom: 50px;
 
     &::after {
       display: none;
@@ -61,7 +61,6 @@
   .promo__container {
     padding-left: 100px;
     padding-top: 55px;
-    margin-bottom: 5px;
     position: relative;
   }
 
@@ -72,6 +71,7 @@
     font-weight: normal;
     text-align: left;
     max-width: 520px;
+    margin-bottom: 45px;
   }
 
   .promo__intro {
@@ -79,13 +79,15 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    margin-bottom: 45px;
   }
 
   .promo__img {
     position: absolute;
-    top: 340px;
+    top: 300px;
     margin: 0 auto;
     z-index: -1;
+    right: 50px;
   }
 }
 
@@ -96,7 +98,7 @@
   }
 
   .promo__img {
-    top: -25px;
-    left: 50%;
+    top: -20px;
+    left: 286px;
   }
 }
