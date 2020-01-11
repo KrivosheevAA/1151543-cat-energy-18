@@ -50,17 +50,13 @@
   border: none;
   font-family: $font-main;
 
-  span {
-    border-bottom: 1px dashed $color-grey-2;
-
-    &:hover {
+  &:hover {
       border-bottom: 1px solid $color-grey-5;
       background: none;
-    }
+  }
 
-    &:active {
+  &:active {
       border-bottom: none;
-    }
   }
 }
 
@@ -78,12 +74,17 @@
 @media (min-width: $tablet-width) {
   .button__slider {
     font-size: 20px;
+
+    span {
+      border-bottom: 1px dashed $color-grey-2;
+    }
   }
 
   .button--promo {
     width: 246px;
     font-size: 20px;
     line-height: 20px;
+    padding: 16px 0;
   }
 
   .button--form {

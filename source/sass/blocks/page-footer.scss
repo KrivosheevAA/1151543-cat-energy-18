@@ -1,5 +1,6 @@
 .page-footer {
   background: $color-grey;
+  min-height: 235px;
 }
 
 .page-footer__item {
@@ -20,7 +21,7 @@
 
 .page-footer__logo {
   max-width: 135px;
-  padding: 35px 0 30px;
+  padding: 35px 0 26px;
 
   &:hover {
     opacity: 0.8;
@@ -62,7 +63,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0;
+  padding: 27px 0;
   position: relative;
 }
 
@@ -79,7 +80,7 @@
 
 .page-footer__icon {
   position: absolute;
-  top: 22px;
+  top: 19px;
   right: -6px;
   fill: $color-blackgray;
 

@@ -1,18 +1,21 @@
 .example {
   background: $color-grey;
+  min-height: 705px;
 }
 
 .example__title {
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  padding-top: 28px;
+  padding-top: 16px;
+  margin-bottom: 20px;
 }
 
 .example__info {
   font-family: $font;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 8px;
 }
 
 .example__result {
@@ -30,11 +33,12 @@
   font-size: 24px;
   line-height: 24px;
   max-width: 124px;
-  padding: 15px 10px 12px;
+  padding: 8px 12px 12px 12px;
   text-align: center;
   border: 1px solid $color-grey-hr;
   border-radius: 5px;
   text-transform: uppercase;
+  height: 52px;
 }
 
 .example__text {
@@ -44,11 +48,10 @@
   background: $color-grey;
   width: 80px;
   position: absolute;
-  top: 52px;
-  left: 32px;
+  top: 53px;
+  left: 22px;
   display: block;
   text-align: center;
-  margin: 22px 0 0 -10px;
 }
 
 .example__cost {
@@ -59,6 +62,12 @@
   flex-wrap: wrap;
   justify-content: center;
   flex: 0 0 100%;
+  text-transform: uppercase;
+  margin-top: 10px;
+
+}
+.example__image {
+  margin-top: 20px;
 }
 
 .example__slider {
@@ -83,13 +92,16 @@
     top: 0;
   }
 }
+.example__element--after {
+  display: none;
+}
 
 .example__element img {
   position: absolute;
   max-width: none;
   top: 0;
   bottom: 0;
-  left: -15px;
+  left: -20px;
   height: auto;
 }
 
@@ -97,8 +109,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 35px;
-  max-width: 195px;
+  padding: 2px 0 16px;
+  max-width: 210px;
   margin: 0 auto;
 }
 
