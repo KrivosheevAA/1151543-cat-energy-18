@@ -93,3 +93,10 @@
     max-width: 283px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button--catalog {
+    flex-shrink: 0;
+    max-width: 245px;
+  }
+}

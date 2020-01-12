@@ -73,7 +73,7 @@
 .example__slider {
   height: 270px;
   position: relative;
-  width: 610px;
+  width: 100%;
 }
 
 .example__element {
@@ -94,6 +94,7 @@
 }
 .example__element--after {
   display: none;
+  left: auto;
 }
 
 .example__element img {
@@ -199,7 +200,6 @@
   .example__slider {
     height: 517px;
     position: relative;
-    width: 486px;
   }
 
   .example__element {
@@ -211,7 +211,7 @@
   }
 
   .example__element--before {
-    width: 64%;
+    width: 45%;
 
     img {
       left: -40px;
@@ -222,9 +222,10 @@
     width: 50%;
     left: auto;
     right: 0;
+    display: block;
 
     img {
-      right: -40px;
+      right: -8px;
     }
   }
 
@@ -234,6 +235,7 @@
     top: 0;
     bottom: 0;
     height: auto;
+    left: auto;
   }
 
   .example__range {
@@ -246,21 +248,6 @@
     height: 6px;
     margin: 0 25px;
     background: $color-grey-hr;
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 5px;
-      bottom: 0;
-      right: 0;
-      left: 5px;
-      width: 8px;
-      height: 8px;
-      margin: auto;
-      border-radius: 50%;
-      background-color: $color-green;
-    }
   }
 
   .example__bar {
@@ -275,6 +262,19 @@
     cursor: pointer;
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: calc(50% - 8px / 2);
+      left: calc(50% - 8px / 2);
+      width: 8px;
+      height: 8px;
+      margin: auto;
+      border-radius: 50%;
+      background-color: $color-green;
+    }
   }
 }
 
