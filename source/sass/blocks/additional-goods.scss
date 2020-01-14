@@ -14,9 +14,10 @@
     position: absolute;
     display: block;
     top: calc(50% - 3px / 2);
-    width: 320px;
+    width: 53px;
     height: 3px;
-    margin-top: 2px;
+    right: -75px;
+    margin-top: 4px;
     background-color: $color-green;
   }
 }
@@ -24,12 +25,35 @@
 .additional-goods__list {
   list-style: none;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .additional-goods__item {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: $color-grey-3;
+    top: 15px;
+    left: -20px;
+    right: -20px;
+  }
+
+  &:last-child:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: $color-grey-3;
+    top: 145px;
+    left: -20px;
+    right: -20px;
+  }
 }
 
 .additional-goods__blog {
@@ -94,13 +118,31 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
-  max-width: 150px;
+  max-width: 165px;
 }
 
 @media (min-width: $tablet-width) {
   .additional-goods__title {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: calc(50% - 3px / 2);
+      width: 28px;
+      height: 3px;
+      left: -65px;
+      margin-top: 4px;
+      background-color: $color-green;
+    }
+
+    &::after {
+      width: 327px;
+      left: 375px;
+    }
   }
 
   .additional-goods__list {

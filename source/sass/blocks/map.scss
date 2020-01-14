@@ -51,6 +51,12 @@
   .map__text {
     font-size: 16px;
     text-align: right;
+    max-width: 170px;
+
+    span {
+      display: block;
+      margin-top: 15px;
+    }
   }
 
   .map__adaptive {

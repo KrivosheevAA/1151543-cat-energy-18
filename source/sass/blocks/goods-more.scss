@@ -11,7 +11,7 @@
     left: 44%;
     width: 30px;
     height: 2px;
-    background-color: $color-border-goods-more;
+    background-color: $color-grey-7;
   }
 
   &::before {
@@ -44,9 +44,8 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-top: 0;
-    padding: 40px 35px 40px;
-    border: 1px solid #f2f2f2;
-    height: 100%;
+    border: 1px solid $color-lightgray;
+    background-color: $color-white;
 
     &::before,
     &::after {

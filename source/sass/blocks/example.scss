@@ -123,22 +123,26 @@
   border: 1px solid $color-grey-hr;
   border-radius: 50px;
   background: $color-white;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    right: 5px;
-    width: 35px;
-    height: 6px;
-    border-radius: 50px;
-    background: $color-green;
-    transform: translateY(-50%);
-  }
+.example__bar {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  right: 5px;
+  width: 35px;
+  height: 6px;
+  border-radius: 50px;
+  background: $color-green;
+  transform: translateY(-50%);
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: $color-white;
+    border-top: 1px solid $color-grey-hr;
+  }
+
   .example__container {
     display: flex;
     flex-wrap: wrap;
@@ -211,7 +215,7 @@
   }
 
   .example__element--before {
-    width: 45%;
+    width: 48%;
 
     img {
       left: -40px;
@@ -219,7 +223,7 @@
   }
 
   .example__element--after {
-    width: 50%;
+    width: 48%;
     left: auto;
     right: 0;
     display: block;
@@ -246,7 +250,7 @@
   .example__progress {
     max-width: inherit;
     height: 6px;
-    margin: 0 25px;
+    margin: 0 12px;
     background: $color-grey-hr;
   }
 
