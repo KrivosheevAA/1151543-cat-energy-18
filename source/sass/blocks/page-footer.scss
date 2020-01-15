@@ -10,8 +10,8 @@
   justify-content: center;
 
   &:nth-of-type(2) {
-    border-top: 1px solid $color-grey-hr;
-    border-bottom: 1px solid $color-grey-hr;
+    border-top: 1px solid $color-grey-10;
+    border-bottom: 1px solid $color-grey-10;
   }
 
   &:nth-of-type(3) {
@@ -47,7 +47,7 @@
 }
 
 .social__icon {
-  fill: $color-blackgray;
+  fill: $color-grey-12;
 
   &:hover {
     fill: $color-green;
@@ -69,7 +69,7 @@
 
 .page-footer__link {
   font-family: $font;
-  color: $color-darkgray;
+  color: $color-grey-11;
   font-size: 16px;
   line-height: 16px;
 
@@ -82,7 +82,7 @@
   position: absolute;
   top: 19px;
   right: -6px;
-  fill: $color-blackgray;
+  fill: $color-grey-12;
 
   &:hover {
     fill: $color-green;
