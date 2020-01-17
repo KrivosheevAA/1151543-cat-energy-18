@@ -79,6 +79,7 @@
         </div>
         <fieldset class="main-form__fieldset">
           <div class="main-form__column main-form__column--contacts">
+            <div class="main-form__row-contacts">
             <legend class="legend__title legend__title--contacts">Контактные данные (владельца кота)</legend>
             <p class="main-form__group main-form__group--icon">
               <label class="main-form__label" for="email">E-mail:*</label>
@@ -95,6 +96,7 @@
               </svg>
             </p>
           </div>
+          </div>
         </fieldset>
         <fieldset class="main-form__fieldset">
           <div class="main-form__column main-form__column--comment">
@@ -105,22 +107,24 @@
         <fieldset class="main-form__fieldset">
           <div class="main-form__column main-form__column--additional">
             <legend class="legend__title legend__title--additional">Дополнительно</legend>
-            <p class="main-form__group">
-              <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-1" name="check-1" checked>
-              <label class="main-form__custom-checkbox" for="check-1">Сахарозаменитель</label>
-            </p>
-            <p class="main-form__group">
-              <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-2" name="check-2">
-              <label class="main-form__custom-checkbox" for="check-2">Питьевая вода</label>
-            </p>
-            <p class="main-form__group">
-              <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-3" name="check-3">
-              <label class="main-form__custom-checkbox" for="check-3">Молоко</label>
-            </p>
-            <p class="main-form__group">
-              <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-4" name="check-4">
-              <label class="main-form__custom-checkbox" for="check-4">Витамины</label>
-            </p>
+            <div class="main-form__column__row">
+              <p class="main-form__group">
+                <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-1" name="check-1" checked>
+                <label class="main-form__custom-checkbox" for="check-1">Сахарозаменитель</label>
+              </p>
+              <p class="main-form__group">
+                <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-2" name="check-2">
+                <label class="main-form__custom-checkbox" for="check-2">Питьевая вода</label>
+              </p>
+              <p class="main-form__group">
+                <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-3" name="check-3">
+                <label class="main-form__custom-checkbox" for="check-3">Молоко</label>
+              </p>
+              <p class="main-form__group">
+                <input class="visually-hidden main-form__checkbox" type="checkbox" id="check-4" name="check-4">
+                <label class="main-form__custom-checkbox" for="check-4">Витамины</label>
+              </p>
+            </div>
           </div>
         </fieldset>
         <div class="main-form__blog">
