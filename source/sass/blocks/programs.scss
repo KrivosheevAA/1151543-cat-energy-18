@@ -13,7 +13,8 @@
   background: $color-grey;
   flex: 0 0 100%;
   position: relative;
-  padding: 0 20px 20px;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
 }
 
 .programs__title {
@@ -23,17 +24,17 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 35px;
-  padding: 40px 0 0 70px;
+  margin-bottom: 26px;
+  padding: 31px 0 0 70px;
 }
 
 .programs__discription {
   font-family: $font;
   font-size: 14px;
   line-height: 18px;
-  border-bottom: 1px solid $color-grey-hr;
-  padding-bottom: 20px;
-  margin-bottom: 19px;
+  border-bottom: 1px solid $color-grey-10;
+  padding-bottom: 24px;
+  margin-bottom: 13px;
 
   br {
     display: none;
@@ -46,13 +47,14 @@
   height: 50px;
   background: $color-green;
   border-radius: 50%;
-  top: 30px;
+  top: 23px;
+  left: 23px;
 }
 
 .programs__icon {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 47%;
   transform: translate(-50%, -50%);
 }
 
@@ -99,12 +101,14 @@
 
   .programs__items {
     padding: 77px 315px 58px 52px;
+    margin-bottom: 30px;
+    min-width: 708px;
   }
 
   .programs__title {
     font-size: 36px;
     line-height: 37px;
-    padding-left: 0;
+    padding: 0;
     margin-bottom: 25px;
   }
 
@@ -122,7 +126,7 @@
   }
 
   .programs__img {
-    right: 60px;
+    left: 449px;
     top: 90px;
     width: 200px;
     height: 200px;
@@ -137,6 +141,8 @@
   .programs__icon--tiger {
     width: 133%;
     height: 100%;
+    top: 50%;
+    left: 49%;
   }
 
   .programs__link {
@@ -145,8 +151,9 @@
     line-height: 20px;
 
     &::after {
-      left: 106px;
-      top: 10px;
+      left: 125px;
+      top: 9px;
+      background: url("../img/icon-right-arrow-long.svg") no-repeat;
     }
   }
 }

@@ -8,7 +8,7 @@
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="../js/picturefill.js" async></script>
+  <script src="../js/picturefill.min.js" async></script>
 </head>
 <body class="site-body site-body--index">
   <header class="page-header">
@@ -16,8 +16,8 @@
       <a class="page-header__logo logo">
         <picture>
           <source media="(min-width: 1300px)" srcset="../img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-              <img class="logo__img" src="../img/logo-mobile.svg" alt="Логотип Cat Energy">
+          <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+          <img class="logo__img" src="../img/logo-mobile.svg" alt="Логотип Cat Energy">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -43,11 +43,11 @@
         <p class="promo__intro">Занялся собой? Займись котом!</p>
         <picture>
           <source type="image/webp" media="(min-width: 1300px)" srcset="../img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="../img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
-                <source media="(min-width: 1300px)" srcset="../img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
-                    <img class="promo__img" src="../img/index-can-mobile@1x.png" srcset="../img/index-can-mobile@2x.png 2x" alt="Продукт">
+          <source type="image/webp" media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="../img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="../img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+          <img class="promo__img" src="../img/index-can-mobile@1x.png" srcset="../img/index-can-mobile@2x.png 2x" alt="Продукт">
         </picture>
         <a class="button button--promo" href="form.html">Подобрать программу</a>
       </div>
@@ -90,7 +90,7 @@
             <p class="plan__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="plan__item plan__item--dining">
-            <p class="plan__text">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+            <p class="plan__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="plan__item plan__item--clock">
             <p class="plan__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
@@ -112,7 +112,7 @@
               <p class="example__count">60 дней</p>
               <p class="example__text">затрачено времени</p>
             </div>
-            <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+            <p class="example__cost">Затраты на питание:<span>15 000 руб.</span></p>
           </div>
         </div>
         <div class="example__image">
@@ -120,30 +120,30 @@
             <div class="example__element example__element--before">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="../img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="../img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
-                      <source media="(min-width: 1300px)" srcset="../img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-                          <img src="../img/before-mobile@1x.png" srcset="../img/before-mobile@2x.png 2x" alt="Foot Cat">
+                <source type="image/webp" media="(min-width: 768px)" srcset="../img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="../img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="../img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <img src="../img/before-mobile@1x.png" srcset="../img/before-mobile@2x.png 2x" alt="Foot Cat">
               </picture>
             </div>
             <div class="example__element example__element--after">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="../img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="../img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="../img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
-                      <source media="(min-width: 1300px)" srcset="../img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
-                        <source media="(min-width: 768px)" srcset="../img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
-                          <img src="../img/after-mobile@1x.png" srcset="../img/after-mobile@2x.png 2x" alt="Thin cat">
+                <source type="image/webp" media="(min-width: 768px)" srcset="../img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="../img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="../img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="../img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <img src="../img/after-mobile@1x.png" srcset="../img/after-mobile@2x.png 2x" alt="Thin cat">
               </picture>
             </div>
           </div>
           <div class="example__range">
-            <button class="button__slider"><span>Было</span></button>
+            <button type="button" class="button__slider"><span>Было</span></button>
             <div class="example__progress">
-              <div class="example__bar"></div>
+              <button type="button" class="example__bar"></button>
             </div>
-            <button class="button__slider"><span>Стало</span></button>
+            <button type="button" class="button__slider"><span>Стало</span></button>
           </div>
         </div>
       </div>
@@ -152,7 +152,7 @@
       <div class="container">
         <div class="map__invite">
           <h2 class="map__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
-          <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="map__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
       <div class="map__adaptive">
@@ -170,7 +170,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__icon" width="22" height="12">
+              <svg class="social__icon social__icon--vk" width="22" height="12">
                 <use xlink:href="../img/sprite.svg#vkontakte"></use>
               </svg>
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -178,7 +178,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__icon" width="16" height="16">
+              <svg class="social__icon social__icon--ins" width="16" height="16">
                 <use xlink:href="../img/sprite.svg#instagram"></use>
               </svg>
               <span class="visually-hidden">Мы в Инстаграме</span>
@@ -186,7 +186,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg class="social__icon" width="16" height="16">
+              <svg class="social__icon social__icon--fb" width="10" height="19">
                 <use xlink:href="../img/sprite.svg#facebook"></use>
               </svg>
               <span class="visually-hidden">Мы в Фейсбуке</span>
