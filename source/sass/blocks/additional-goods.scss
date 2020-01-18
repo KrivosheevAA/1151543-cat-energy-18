@@ -45,7 +45,7 @@
     right: -20px;
   }
 
-  &:last-child:after {
+  &:last-child::after {
     content: "";
     position: absolute;
     display: block;
@@ -157,7 +157,7 @@
       display: none;
     }
 
-    &:last-child:after {
+    &:last-child::after {
       display: none;
     }
   }
@@ -222,7 +222,7 @@
       left: -110px;
     }
 
-    &::after{
+    &::after {
       width: 957px;
     }
   }
@@ -245,7 +245,7 @@
       right: 0;
     }
 
-    &:last-child:after {
+    &:last-child::after {
       display: block;
       top: 80px;
       left: 0;

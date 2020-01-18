@@ -51,12 +51,12 @@
   font-family: $font-main;
 
   &:hover {
-      border-bottom: 1px solid $color-grey-5;
-      background: none;
+    border-bottom: 1px solid $color-grey-5;
+    background: none;
   }
 
   &:active {
-      border-bottom: none;
+    border-bottom: none;
   }
 }
 
@@ -98,5 +98,9 @@
   .button--catalog {
     flex-shrink: 0;
     max-width: 245px;
+  }
+
+  .button--form {
+    max-width: 570px;
   }
 }
