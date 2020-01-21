@@ -49,15 +49,6 @@
   cursor: pointer;
   border: none;
   font-family: $font-main;
-
-  &:hover {
-    border-bottom: 1px solid $color-grey-5;
-    background: none;
-  }
-
-  &:active {
-    border-bottom: none;
-  }
 }
 
 .button--catalog {
@@ -102,5 +93,18 @@
 
   .button--form {
     max-width: 570px;
+  }
+
+  .button__slider {
+    span {
+      &:hover {
+        border-bottom: 1px solid $color-grey-5;
+        background: none;
+      }
+
+      &:active {
+        border-bottom: none;
+      }
+    }
   }
 }

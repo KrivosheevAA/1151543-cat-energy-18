@@ -136,6 +136,7 @@
   border-radius: 50px;
   background: $color-green;
   transform: translateY(-50%);
+  border: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -151,6 +152,7 @@
 
   .example__title {
     font-size: 60px;
+    margin-bottom: 60px;
   }
 
   .example__result {
@@ -178,6 +180,7 @@
     width: 133px;
     top: 80px;
     left: 26px;
+    background: none;
   }
 
   .example__count {
@@ -195,6 +198,7 @@
     margin-left: 80px;
     padding-left: 35px;
     padding-top: 25px;
+    justify-content: flex-end;
   }
 
   .example__image {
@@ -205,6 +209,28 @@
   .example__slider {
     height: 517px;
     position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 170px;
+      z-index: -1;
+    }
+
+    &::before {
+      background-color: $color-grey;
+      left: -50%;
+    }
+
+    &::after {
+      background-color: $color-grey-6;
+      right: -50%;
+    }
   }
 
   .example__element {
@@ -246,6 +272,8 @@
   .example__range {
     max-width: 575px;
     padding: 10px 0 70px;
+    position: relative;
+    z-index: 1;
   }
 
   .example__progress {
@@ -266,7 +294,6 @@
     background: $color-white;
     cursor: pointer;
     transform: translate(-50%, -50%);
-    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
 
     &::after {
       content: "";
@@ -341,6 +368,16 @@
     &::after {
       left: 4px;
       top: 7px;
+    }
+  }
+
+  .example__bar {
+    &:hover {
+      box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $color-green;
     }
   }
 }
