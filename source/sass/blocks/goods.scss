@@ -111,10 +111,11 @@
 
   .goods__image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: -120px;
     min-height: 215px;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
   }
 
   .goods__image img {
