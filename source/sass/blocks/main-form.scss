@@ -126,11 +126,11 @@
   border-radius: 50%;
 }
 
-.main-form__radio:disabled + .main-form__custom-radio:before {
+.main-form__radio:disabled + .main-form__custom-radio::before {
   opacity: 0.5;
 }
 
-.main-form__radio:disabled + .main-form__custom-radio:after {
+.main-form__radio:disabled + .main-form__custom-radio::after {
   opacity: 0.5;
 }
 
