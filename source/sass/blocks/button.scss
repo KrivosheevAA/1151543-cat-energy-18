@@ -65,9 +65,12 @@
 @media (min-width: $tablet-width) {
   .button__slider {
     font-size: 20px;
+    margin: 0;
+    padding: 0;
 
     span {
-      border-bottom: 1px dashed $color-grey-2;
+      border-bottom: 1px dotted $color-grey-2;
+      margin: 0 2px 0 2px;
     }
   }
 
@@ -75,7 +78,8 @@
     width: 246px;
     font-size: 20px;
     line-height: 20px;
-    padding: 16px 0;
+    padding: 15px 0;
+    height: 52px;
   }
 
   .button--form {

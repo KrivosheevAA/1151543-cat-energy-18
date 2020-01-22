@@ -35,7 +35,7 @@
     background-color: $color-green;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 50px;
   }
 }
 
@@ -110,6 +110,21 @@
 
 
 @media (min-width: $tablet-width) {
+  .plan {
+    margin-bottom: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1px;
+      background-color: $color-grey-9;
+      width: 100vw;
+      bottom: 10px;
+    }
+  }
+
   .plan__title {
     font-size: 60px;
     line-height: 60px;
@@ -120,7 +135,6 @@
 
   .plan__list {
     min-height: 230px;
-    margin-bottom: 87px;
     counter-reset: items;
   }
 
@@ -150,10 +164,10 @@
     }
 
     &:nth-of-type(2n) {
-      padding-left: 35px;
+      padding-left: 28px;
 
       &::after {
-        padding-left: 30px;
+        padding-left: 28px;
       }
     }
   }
