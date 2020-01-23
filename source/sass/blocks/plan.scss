@@ -184,8 +184,43 @@
 }
 
 @media (min-width: $desktop-width) {
+  .plan  {
+    &::after {
+      display: none;
+    }
+  }
+
   .plan__item {
+    flex: 0 0 25%;
     max-width: 25%;
     margin-bottom: 30px;
+
+    &:nth-of-type(2) {
+      padding-left: 20px;
+
+      &::after {
+        left: 104px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      padding-left: 40px;
+
+       &::after {
+        left: 155px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      padding-left: 60px;
+
+      &::after {
+        left: 148px;
+      }
+    }
+  }
+
+  .plan__text {
+    max-width: 250px;
   }
 }
