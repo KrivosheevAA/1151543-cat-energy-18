@@ -183,12 +183,15 @@
     &:nth-of-type(2n+1) {
       margin-right: 80px;
     }
-
   }
 
   .programs__title {
     margin: 28px 0 72px 0;
     text-align: center;
+  }
+
+  .programs__title--tiger {
+    padding-left: 40px;
   }
 
   .programs__discription {
