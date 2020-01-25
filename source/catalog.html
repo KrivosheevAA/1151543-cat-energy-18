@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="../fonts/oswaldmedium.woff2" as="fonts" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/oswaldregular.woff2" as="fonts" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="../fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="../fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../css/style.min.css">
   <script>
     document.createElement( "picture" );
@@ -51,7 +51,7 @@
           <li class="goods__item">
             <div class="goods__blog">
               <div class="goods__product">
-                <a name="catalogpro"></a>
+                <a id="catalogpro"></a>
                 <a class="goods__image" href="cat-energy-pro-500-chicken.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1300px)" srcset="../img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
@@ -204,7 +204,7 @@
           <li class="goods__item">
             <div class="goods__blog">
               <div class="goods__product">
-                <a name="catalogslim"></a>
+                <a id="catalogslim"></a>
                 <a class="goods__image" href="cat-energy-slim-500-buckwheat.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1300px)" srcset="../img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
@@ -320,7 +320,7 @@
             <div class="goods__blog goods-more">
               <p class="goods-more__text--big">Показать еще 100500 товаров</p>
               <p class="goods-more__text">На самом деле вкусов гораздо больше!</p>
-              <button type="button" class="button button--light" href="product-all">Показать все</button>
+              <a class="button button--light" href="product-all">Показать все</a>
             </div>
           </li>
         </ul>
@@ -332,12 +332,12 @@
         <ul class="additional-goods__list">
           <li class="additional-goods__item">
             <div class="additional-goods__blog">
+              <h3 class="additional-goods__discription">Сахарозаменитель</h3>
               <table class="additional-goods__table">
                 <tbody>
-                  <h3 class="additional-goods__discription">Сахарозаменитель</h3>
                   <tr>
                     <td class="additional-goods__cost">1 упаковка (100 г)</td>
-                    <td class="additional-goods__cost">200 р.</td>
+                    <td class="additional-goods__cost">200 Р.</td>
                   </tr>
                 </tbody>
               </table>
@@ -346,12 +346,12 @@
           </li>
           <li class="additional-goods__item">
             <div class="additional-goods__blog">
+              <h3 class="additional-goods__discription">Питьевая вода</h3>
               <table class="additional-goods__table">
                 <tbody>
-                  <h3 class="additional-goods__discription">Питьевая вода</h3>
                   <tr>
                     <td class="additional-goods__cost">5 литров</td>
-                    <td class="additional-goods__cost">50 р.</td>
+                    <td class="additional-goods__cost">50 Р.</td>
                   </tr>
                 </tbody>
               </table>
@@ -360,12 +360,12 @@
           </li>
           <li class="additional-goods__item">
             <div class="additional-goods__blog">
+              <h3 class="additional-goods__discription">Молоко</h3>
               <table class="additional-goods__table">
                 <tbody>
-                  <h3 class="additional-goods__discription">Молоко</h3>
                   <tr>
                     <td class="additional-goods__cost">1 литр</td>
-                    <td class="additional-goods__cost">100 р.</td>
+                    <td class="additional-goods__cost">100 Р.</td>
                   </tr>
                 </tbody>
               </table>
@@ -374,12 +374,12 @@
           </li>
           <li class="additional-goods__item">
             <div class="additional-goods__blog">
+              <h3 class="additional-goods__discription">Витамины</h3>
               <table class="additional-goods__table">
                 <tbody>
-                  <h3 class="additional-goods__discription">Витамины</h3>
                   <tr>
                     <td class="additional-goods__cost">1 упаковка (30 г)</td>
-                    <td class="additional-goods__cost">300 р.</td>
+                    <td class="additional-goods__cost">300 Р.</td>
                   </tr>
                 </tbody>
               </table>
