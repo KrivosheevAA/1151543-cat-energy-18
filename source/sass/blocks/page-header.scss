@@ -1,6 +1,15 @@
 .page-header {
-  border-bottom: 1px solid $color-grey-8;
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 1px;
+    background-color: $color-grey-8;
+    height: 1px;
+    width: 100%;
+  }
 }
 
 .page-header__container {
@@ -8,13 +17,17 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     border: none;
+
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__container {
@@ -31,7 +44,7 @@
       background-color: $color-green;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 0%;
+      background-position: 100%;
       display: block;
       width: 50%;
       height: 696px;

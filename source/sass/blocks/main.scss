@@ -3,6 +3,7 @@
   line-height: 60px;
   color: $color-black;
   font-weight: 400;
+  margin-top: 15px;
 }
 
 .main__text {
@@ -14,8 +15,8 @@
 @media (min-width: $tablet-width) {
   .main-title {
     font-size: 60px;
-    margin-bottom: 55px;
-    padding-top: 55px;
+    margin-bottom: 52px;
+    padding-top: 40px;
   }
 
   .main__text {
@@ -23,11 +24,19 @@
     line-height: 30px;
     margin-left: 40px;
     margin-bottom: 50px;
+    padding-top: 4px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-title {
+    padding-top: 25px;
+    margin-top: 0;
+  }
+
   .main__text {
     margin-left: 0;
+    padding-top: 0;
+    margin-bottom: 50px;
   }
 }

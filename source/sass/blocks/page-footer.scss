@@ -43,7 +43,8 @@
 
 .social__item {
   cursor: pointer;
-  margin: 0 20px;
+  margin: 0 14px;
+  padding-right: 11px;
 }
 
 .social__icon {
@@ -63,7 +64,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 0;
+  padding: 30px 0;
   position: relative;
 }
 
@@ -120,7 +121,8 @@
 
   .social__item {
     cursor: pointer;
-    margin: 0 24px;
+    margin: 0 10px;
+    padding: 6px 11px 0 0;
   }
 
   .social__icon--vk {
@@ -143,6 +145,24 @@
   }
 
   .page-footer__link {
-    margin-right: 40px;
+    margin-right: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 35px 0;
+  }
+
+  .page-footer__logo {
+    padding: 35px 7px 26px 0;
+  }
+
+  .page-footer__link {
+    margin-top: 5px;
+  }
+
+  .page-footer__icon {
+    top: 23px;
   }
 }
