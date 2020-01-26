@@ -24,6 +24,10 @@
 @media (min-width: $tablet-width) {
   .page-header {
     border: none;
+
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__container {

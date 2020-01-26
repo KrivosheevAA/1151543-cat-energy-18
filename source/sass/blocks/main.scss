@@ -15,8 +15,8 @@
 @media (min-width: $tablet-width) {
   .main-title {
     font-size: 60px;
-    margin-bottom: 55px;
-    padding-top: 55px;
+    margin-bottom: 52px;
+    padding-top: 40px;
   }
 
   .main__text {
@@ -28,6 +28,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-title {
+    padding-top: 25px;
+    margin-top: 0;
+  }
+
   .main__text {
     margin-left: 0;
   }
