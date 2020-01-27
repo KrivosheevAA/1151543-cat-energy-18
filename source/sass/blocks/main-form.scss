@@ -152,16 +152,17 @@
   opacity: 0.3;
 }
 
-.legend__title {
+.main-form__legend {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 10px;
   position: relative;
   background: $color-white;
+  font-weight: 400;
   padding: 0;
 }
 
-.legend__title--contacts {
+.main-form__legend--contacts {
   &::after {
     content: "";
     position: absolute;
@@ -206,7 +207,7 @@
   margin-bottom: 26px;
 }
 
-.legend__title--comment {
+.main-form__legend--comment {
   margin-bottom: 35px;
 
   &::after {
@@ -246,7 +247,7 @@
   flex-direction: column;
 }
 
-.legend__title--additional {
+.main-form__legend--additional {
   &::after {
     content: "";
     position: absolute;
@@ -404,12 +405,12 @@
     margin-bottom: 45px;
   }
 
-  .legend__title {
+  .main-form__legend {
     font-size: 36px;
     line-height: 36px;
   }
 
-  .legend__title--contacts {
+  .main-form__legend--contacts {
     margin-bottom: 60px;
 
     &::before {
@@ -449,7 +450,7 @@
     margin-bottom: 66px;
   }
 
-  .legend__title--comment {
+  .main-form__legend--comment {
     margin-bottom: 75px;
 
     &::before {
@@ -498,7 +499,7 @@
     flex-wrap: wrap;
   }
 
-  .legend__title--additional {
+  .main-form__legend--additional {
     margin-bottom: 30px;
 
     &::before {
@@ -608,7 +609,7 @@
     margin: 0 0 25px 0;
   }
 
-  .legend__title--contacts {
+  .main-form__legend--contacts {
     &::before {
       left: -110px;
       height: 3px;
@@ -629,7 +630,7 @@
     margin-bottom: 68px;
   }
 
-  .legend__title--comment {
+  .main-form__legend--comment {
     &::before {
       left: -110px;
       height: 3px;
@@ -660,7 +661,7 @@
     }
   }
 
-  .legend__title--additional {
+  .main-form__legend--additional {
     margin-bottom: 30px;
 
     &::before {
