@@ -145,7 +145,7 @@
       content: "";
       position: absolute;
       display: block;
-      top: calc(50% - 3px / 2);
+      top: 19px;
       width: 28px;
       height: 3px;
       left: -65px;
@@ -156,11 +156,12 @@
     &::after {
       width: 327px;
       left: 375px;
+      top: 19px;
     }
   }
 
   .additional-goods__list {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .additional-goods__item {
@@ -241,8 +242,8 @@
   .additional-goods__title {
     flex-grow: 1;
     margin-left: 0;
-    margin-top: 48px;
-    margin-bottom: 77px;
+    margin-top: 45px;
+    margin-bottom: 80px;
 
     &::before {
       width: 70px;
@@ -262,7 +263,7 @@
 
   .additional-goods__item {
     flex-wrap: nowrap;
-    padding: 15px 20px 17px 0;
+    padding: 15px 20px 16px 0;
     align-items: center;
     border: none;
 
@@ -287,6 +288,7 @@
 
   .additional-goods__table {
     margin: 11px 0 8px 0;
+    width: 50%;
 
     td {
       &:first-child {

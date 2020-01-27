@@ -47,6 +47,7 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-top: 0;
+    margin-bottom: 15px;
     border: 1px solid $color-grey-8;
     background-color: $color-white;
 
@@ -61,15 +62,16 @@
   .goods-more__text--big {
     font-size: 20px;
     max-width: 140px;
-    margin: 0 auto 21px;
+    margin: 0 auto 23px;
   }
 
   .goods-more__text {
     font-size: 16px;
-    margin-bottom: 85px;
+    margin-bottom: 82px;
     max-width: 180px;
     margin-left: 32px;
     line-height: 20px;
+    margin-top: 0;
   }
 }
 

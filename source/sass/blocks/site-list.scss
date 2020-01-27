@@ -28,7 +28,7 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    margin-right: -18px;
+    margin-right: -19px;
 
     a {
       margin: 0 auto;
@@ -71,6 +71,9 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+    margin-right: -19px;
+    margin-bottom: 3px;
+
     a {
       color: $color-black;
       font-size: 20px;

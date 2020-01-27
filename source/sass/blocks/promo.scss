@@ -56,7 +56,7 @@
   .promo {
     background: none;
     min-height: 860px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 
     &::after {
       display: none;
@@ -75,7 +75,7 @@
     font-weight: normal;
     text-align: left;
     max-width: 520px;
-    margin: 51px 0 43px 0;
+    margin: 51px 0 40px 0;
   }
 
   .promo__intro {
@@ -88,10 +88,10 @@
 
   .promo__img {
     position: absolute;
-    top: 258px;
+    top: 256px;
     margin: 0 auto;
     z-index: -1;
-    right: 30px;
+    right: 32px;
   }
 }
 
@@ -101,8 +101,12 @@
     min-height: 530px;
   }
 
+  .promo__intro {
+    margin-bottom: 53px;
+  }
+
   .promo__img {
-    top: -23px;
-    left: 264px;
+    top: -24px;
+    left: 263px;
   }
 }

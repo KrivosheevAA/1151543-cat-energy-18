@@ -70,7 +70,7 @@
 .main-form__column--program {
   flex-direction: column;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 36px;
 
   &::before {
     content: "";
@@ -177,7 +177,7 @@
 
 .main-form__row-contacts {
   width: 100%;
-  margin-bottom: 37px;
+  margin-bottom: 12px;
 }
 
 .main-form__label--contacts {
@@ -204,7 +204,7 @@
 }
 
 .main-form__column--comment {
-  margin-bottom: 26px;
+  margin-bottom: 3px;
 }
 
 .main-form__legend--comment {
@@ -360,8 +360,8 @@
     margin-left: 40px;
     margin-right: 37px;
     border: 1px solid $color-grey-8;
-    padding: 6px 0 27px 25px;
-    margin-bottom: 77px;
+    padding: 8px 0 27px 25px;
+    margin-bottom: 40px;
 
     &::before {
       display: none;
@@ -402,7 +402,7 @@
   }
 
   .main-form__row-contacts {
-    margin-bottom: 45px;
+    margin-bottom: 8px;
   }
 
   .main-form__legend {
@@ -433,6 +433,13 @@
 
   .main-form__group--icon {
     margin: 15px -5px 21px 0;
+
+    &:nth-of-type(1) {
+      input {
+        padding: 10px 20px;
+        margin-left: 5px;
+      }
+    }
   }
 
   .main-form__label--contacts {
@@ -447,7 +454,7 @@
   .main-form__column--comment {
     margin-left: 40px;
     margin-right: 37px;
-    margin-bottom: 66px;
+    margin-bottom: 31px;
   }
 
   .main-form__legend--comment {
@@ -561,7 +568,7 @@
 
   .main-form__column--information {
     margin-left: 0;
-    margin-bottom: 65px;
+    margin-bottom: 29px;
 
     p {
       margin: 15px 0 5px 0;
@@ -575,7 +582,7 @@
   .main-form__column--program {
     padding: 8px 0 27px 25px;
     margin-right: 0;
-    margin-bottom: 61px;
+    margin-bottom: 20px;
   }
 
   .main-form__column--contacts {
@@ -600,15 +607,6 @@
     }
   }
 
-  .main-form__row-contacts {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .main-form__group--icon {
-    margin: 0 0 25px 0;
-  }
-
   .main-form__legend--contacts {
     &::before {
       left: -110px;
@@ -624,10 +622,30 @@
     }
   }
 
+  .main-form__row-contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-form__group--icon {
+    margin: 0 0 25px 0;
+
+    &:nth-of-type(1) {
+      input {
+        margin-left: 2px;
+      }
+    }
+  }
+
+  .main-form__icon {
+    top: 52%;
+    right: 21px;
+  }
+
   .main-form__column--comment {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 68px;
+    margin-bottom: 34px;
   }
 
   .main-form__legend--comment {

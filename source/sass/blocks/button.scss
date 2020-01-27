@@ -50,6 +50,8 @@
   cursor: pointer;
   border: none;
   font-family: $font-main;
+  padding-left: 7px;
+  padding-right: 4px;
 }
 
 .button--catalog {
@@ -71,7 +73,7 @@
 
     span {
       border-bottom: 1px dotted $color-grey-2;
-      margin: 0 2px 0 2px;
+      margin: 0 2px 0 3px;
     }
   }
 
@@ -103,6 +105,8 @@
 
   .button__slider {
     span {
+      margin: 0 3px 0 2px;
+
       &:hover {
         border-bottom: 1px solid $color-grey-5;
         background: none;

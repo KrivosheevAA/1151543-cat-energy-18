@@ -15,7 +15,7 @@
   font-family: $font;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 3px;
+  margin-bottom: 0;
   color: $color-grey-11;
 }
 
@@ -34,7 +34,7 @@
   font-size: 24px;
   line-height: 24px;
   max-width: 124px;
-  padding: 11px 12px 12px 12px;
+  padding: 13px 12px 12px 12px;
   text-align: center;
   border: 1px solid $color-grey-9;
   border-radius: 5px;
@@ -180,6 +180,11 @@
   .example__box {
     width: 162px;
     margin-right: 1px;
+
+    &:nth-of-type(2) {
+      margin-left: 20px;
+      margin-right: 22px;
+    }
   }
 
   .example__text {
@@ -187,7 +192,7 @@
     line-height: 14px;
     width: 133px;
     top: 78px;
-    left: 13px;
+    left: 14px;
     background-color: $color-white;
   }
 
@@ -203,9 +208,9 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
-    flex-basis: 31%;
-    margin-left: 80px;
-    padding-left: 35px;
+    flex-basis: 34%;
+    margin-left: 60px;
+    padding-left: 66px;
     padding-top: 9px;
     justify-content: flex-end;
 
@@ -239,12 +244,13 @@
 
     &::before {
       background-color: $color-grey;
-      left: -50%;
+      left: -354px;
+      z-index: 1;
     }
 
     &::after {
       background-color: $color-grey-6;
-      right: -50%;
+      right: -354px;
     }
   }
 
@@ -258,10 +264,7 @@
 
   .example__element--before {
     width: 48%;
-
-    img {
-      left: -40px;
-    }
+    z-index: 1;
   }
 
   .example__element--after {
@@ -271,7 +274,7 @@
     display: block;
 
     img {
-      right: 2px;
+      right: 1px;
     }
   }
 
@@ -294,7 +297,7 @@
   .example__progress {
     max-width: inherit;
     height: 6px;
-    margin: 0 23px;
+    margin: 0 20px 0 20px;
     background: $color-grey-10;
   }
 
@@ -360,7 +363,7 @@
 
   .example__box {
     &:nth-of-type(2) {
-      margin-right: 122px;
+      margin-right: 121px;
     }
   }
 
@@ -402,35 +405,37 @@
 
     &::before {
       background-color: $color-grey;
-      left: -598px;
+      left: -597px;
       width: 1045px;
+      z-index: 2;
     }
 
     &::after {
       background-color: $color-grey-6;
-      right: -15%;
+      right: -111px;
       width: 395px;
     }
   }
 
   .example__element {
     position: absolute;
-    left: 81px;
+    left: 85px;
     top: -10px;
     bottom: 0;
     overflow: hidden;
   }
 
   .example__element--before {
-    width: 50%;
+    width: 364px;
+    z-index: 3;
   }
 
   .example__element--after {
-    width: 39%;
+    width: 40%;
     left: auto;
 
     img {
-      right: -39px;
+      right: -43px;
     }
   }
 
@@ -441,6 +446,8 @@
   }
 
   .example__progress {
+    margin: 0 20px;
+
     &::after {
       left: 4px;
       top: 7px;

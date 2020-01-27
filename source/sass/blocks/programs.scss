@@ -14,7 +14,7 @@
   flex: 0 0 100%;
   position: relative;
   padding: 0 20px 20px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .programs__title {
@@ -157,7 +157,7 @@
     line-height: 20px;
 
     &::after {
-      left: 125px;
+      left: 128px;
       top: 9px;
       background: url("../img/icon-right-arrow-long.svg") no-repeat;
     }
@@ -166,7 +166,7 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    margin-bottom: 49px;
+    margin-bottom: 44px;
   }
 
   .programs__list {
@@ -186,7 +186,7 @@
   }
 
   .programs__title {
-    margin: 28px 0 72px 0;
+    margin: 25px 0 72px 0;
     text-align: center;
   }
 
@@ -206,7 +206,7 @@
 
   .programs__img {
     left: 50px;
-    top: 50px;
+    top: 46px;
     width: 100px;
     height: 100px;
   }
