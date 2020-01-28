@@ -17,6 +17,7 @@
   line-height: 18px;
   margin-bottom: 3px;
   color: $color-grey-11;
+  max-width: 275px;
 }
 
 .example__result {
@@ -171,10 +172,6 @@
     line-height: 24px;
     max-width: 680px;
     margin-top: 65px;
-
-    br {
-      display: none;
-    }
   }
 
   .example__box {
@@ -292,7 +289,7 @@
   }
 
   .example__progress {
-    max-width: inherit;
+    max-width: 430px;
     height: 6px;
     margin: 0 23px;
     background: $color-grey-10;
@@ -347,10 +344,6 @@
   .example__info {
     width: 435px;
     margin-top: 80px;
-
-    br {
-      display: none;
-    }
   }
 
   .example__result {
@@ -359,6 +352,8 @@
   }
 
   .example__box {
+    margin-right: 40px;
+
     &:nth-of-type(2) {
       margin-right: 122px;
     }

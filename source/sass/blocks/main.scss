@@ -10,6 +10,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  max-width: 230px;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,6 +26,7 @@
     margin-left: 40px;
     margin-bottom: 50px;
     padding-top: 4px;
+    max-width: 330px;
   }
 }
 

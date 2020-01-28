@@ -67,10 +67,10 @@
   .button__slider {
     font-size: 20px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px dotted $color-grey-2;
 
     span {
-      border-bottom: 1px dotted $color-grey-2;
       margin: 0 2px 0 2px;
     }
   }
@@ -103,6 +103,8 @@
 
   .button__slider {
     span {
+      margin: 0;
+
       &:hover {
         border-bottom: 1px solid $color-grey-5;
         background: none;

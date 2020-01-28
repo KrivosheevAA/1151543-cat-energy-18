@@ -1,7 +1,6 @@
 function initPictureElement() {
 
   document.createElement( "picture" );
-
 }
 
 function initUseElement() {

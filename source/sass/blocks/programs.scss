@@ -36,10 +36,6 @@
   padding-bottom: 24px;
   margin-bottom: 13px;
   color: $color-grey-11;
-
-  br {
-    display: none;
-  }
 }
 
 .programs__img {
@@ -109,6 +105,12 @@
     padding: 77px 315px 58px 52px;
     margin-bottom: 30px;
     min-width: 708px;
+
+    &:nth-of-type(2) {
+      p {
+        width: 340px;
+      }
+    }
   }
 
   .programs__title {
@@ -125,10 +127,6 @@
     line-height: 24px;
     border: none;
     width: 375px;
-
-    br {
-      display: block;
-    }
   }
 
   .programs__img {
@@ -183,6 +181,12 @@
     &:nth-of-type(2n+1) {
       margin-right: 80px;
     }
+
+    &:nth-of-type(2) {
+      p {
+        width: 470px;
+      }
+    }
   }
 
   .programs__title {
@@ -198,10 +202,6 @@
     width: 470px;
     padding-bottom: 27px;
     margin-bottom: 5px;
-
-    br {
-      display: none;
-    }
   }
 
   .programs__img {
